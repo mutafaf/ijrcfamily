@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>IJRC</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="title" content="International Journalists Rights Council">
+    <meta name="description" content="Call: 0345 4151044">
+
+  <meta name="description" content="International journalists rights council is an independent international org working across the world for journalist community. It's spread deeply in Pak.">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="keywords" content="ijrc, ijrcofficial, ijrc official, ijrc family, ijrcfamily, ijrc family official, ijrc official family, ijrcfamilyofficial, ijrcofficialfamily  ">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/icons.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+  <div class="wrapper">
+    <div class="logo">
+      <h1>IJRC FAMILY</h1>
+    </div>
+    <h3>Comming soon!</h3>
+    <h2>Be ready, there is just</h2>
+    <ul class="countdown">
+      <li>
+          <span id="days">00</span>
+          <p class="days_ref">days</p>
+      </li>
+      <li>
+          <span id="hours">OO</span>
+          <p class="hours_ref">hours</p>
+      </li>
+      <li>
+          <span id="minutes">00</span>
+          <p class="minutes_ref">minutes</p>
+      </li>
+      <li>
+          <span id="seconds">O3</span>
+          <p class="seconds_ref">seconds</p>
+      </li>
+  </ul>
+
+    <ul class="social">
+      <li><a href="https://www.facebook.com/www.ijrc.family/"><i class="icon-facebook"></i></a></li>
+    </ul>
+    <div class="copyright">
+      <p>© 2017 <a href="http://ijrc.family" target="_blank">IJRC.Family</a> &amp; <a href="http://ijrcofficial.com" target="_blank">IJRCofficial.com</a></p>
+    </div>
+  </div>
+    <script>
+      var end = new Date('06/25/2017 00:00 AM');
+
+      var _second = 1000;
+      var _minute = _second * 60;
+      var _hour = _minute * 60;
+      var _day = _hour * 24;
+      var timer;
+
+      function showRemaining() {
+          var now = new Date();
+          var distance = end - now;
+          if (distance < 0) {
+
+              clearInterval(timer);
+              document.getElementById('countdown').innerHTML = '';
+
+              return;
+          }
+          var days = Math.floor(distance / _day);
+          var hours = Math.floor((distance % _day) / _hour);
+          var minutes = Math.floor((distance % _hour) / _minute);
+          var seconds = Math.floor((distance % _minute) / _second);
+
+          document.getElementById('days').innerHTML = days;
+          document.getElementById('hours').innerHTML = hours;
+          document.getElementById('minutes').innerHTML = minutes;
+          document.getElementById('seconds').innerHTML = seconds;
+      }
+
+      timer = setInterval(showRemaining, 1000);
+  </script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
