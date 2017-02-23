@@ -1,90 +1,255 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>IJRC</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <meta name="title" content="International Journalists Rights Council">
-    <meta name="description" content="Call: 0345 4151044">
+<html lang="en" class="no-js">
+  <head>
 
-  <meta name="description" content="International journalists rights council is an independent international org working across the world for journalist community. It's spread deeply in Pak.">
-  <meta name="MobileOptimized" content="width">
-  <meta name="HandheldFriendly" content="true">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="keywords" content="ijrc, ijrcofficial, ijrc official, ijrc family, ijrcfamily, ijrc family official, ijrc official family, ijrcfamilyofficial, ijrcofficialfamily  ">
-	<link href="css/style.css" rel="stylesheet">
-	<link href="css/icons.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> IJRC | International Journalists Rights Council</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	  <meta name="title" content="International Journalists Rights Council">
+	  <meta name="description" content="Email: info@ijrcofficial.com">
+	  <meta name="description" content="Call: 0345 4151044">
+	  <meta name="description" content="International journalists rights council is an independent international org working across the world for journalist community. It's spread deeply in Pak.">
+	  <meta name="MobileOptimized" content="width">
+	  <meta name="HandheldFriendly" content="true">
+	  <meta name="apple-mobile-web-app-capable" content="yes">
+	  <meta name="keywords" content="ijrc, ijrcofficial, ijrc official, ijrc family, ijrcfamily, ijrc family official, ijrc official family, ijrcfamilyofficial, ijrcofficialfamily  ">
 
-</head>
-<body>
-  <div class="wrapper">
-    <div class="logo">
-      <h1>IJRC FAMILY</h1>
-    </div>
-    <h3>Comming soon!</h3>
-    <h2>Be ready, there is just</h2>
-    <ul class="countdown">
-      <li>
-          <span id="days">00</span>
-          <p class="days_ref">days</p>
-      </li>
-      <li>
-          <span id="hours">OO</span>
-          <p class="hours_ref">hours</p>
-      </li>
-      <li>
-          <span id="minutes">00</span>
-          <p class="minutes_ref">minutes</p>
-      </li>
-      <li>
-          <span id="seconds">O3</span>
-          <p class="seconds_ref">seconds</p>
-      </li>
-  </ul>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media-queries.css">
 
-    <ul class="social">
-      <li><a href="https://www.facebook.com/www.ijrc.family/"><i class="icon-facebook"></i></a></li>
-    </ul>
-    <div class="copyright">
-      <p>© 2017 <a href="http://ijrc.family" target="_blank">IJRC.Family</a> &amp; <a href="http://ijrcofficial.com" target="_blank">IJRCofficial.com</a></p>
-    </div>
-  </div>
-    <script>
-      var end = new Date('06/25/2017 00:00 AM');
+    <script src="js/modernizr-2.6.2.min.js"></script>
 
-      var _second = 1000;
-      var _minute = _second * 60;
-      var _hour = _minute * 60;
-      var _day = _hour * 24;
-      var timer;
+  </head>
 
-      function showRemaining() {
-          var now = new Date();
-          var distance = end - now;
-          if (distance < 0) {
+  <body id="body">
+	<div id="preloader">
+		<img src="img/preloader.gif" alt="Preloader">
+	</div>
+  <header id="navigation" class="navbar-fixed-top navbar">
+    <div class="container">
+      <div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          	<i class="fa fa-bars fa-2x"></i>
+        </button>
+        <a class="navbar-brand" href="#body">
+					<h1 id="logo">
+						<img src="img/logo.png" alt="IJRC" title="International Journalists Rights Council">
+					</h1>
+				</a>
+   		</div>
+      <nav class="collapse navbar-collapse navbar-right" role="navigation">
+        <ul id="nav" class="nav navbar-nav">
+          <li class="current"><a href="#body">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#manifesto">Manifesto</a></li>
+          <li><a href="#team">Our People</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+     </div>
+  </header>
 
-              clearInterval(timer);
-              document.getElementById('countdown').innerHTML = '';
+	<section id="photos">
+    <img src='img/banner.jpeg' alt='IJRC Family'>
+	</section>
 
-              return;
-          }
-          var days = Math.floor(distance / _day);
-          var hours = Math.floor((distance % _day) / _hour);
-          var minutes = Math.floor((distance % _hour) / _minute);
-          var seconds = Math.floor((distance % _minute) / _second);
 
-          document.getElementById('days').innerHTML = days;
-          document.getElementById('hours').innerHTML = hours;
-          document.getElementById('minutes').innerHTML = minutes;
-          document.getElementById('seconds').innerHTML = seconds;
-      }
 
-      timer = setInterval(showRemaining, 1000);
-  </script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
-</body>
+	<section id="about" class="about">
+		<div class="container">
+			<div class="row">
+				<div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+					<h2>About Us</h2>
+					<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+				</div>
+				<div class="sec-sub-title text-center wow rubberBand animated" data-wow-duration="1000ms">
+					<p>
+						"IJRC is an international working journalists organisation striving to promote working journalists, to protect their rights, to work for there welfare, to provide them with leadership & a platform to help resolve their collective issues, and to encourage, educate, train, equip working journalists with tools and techniques to carry out their duty efficiently and professionally without any fear, pressure, prejudice, discrimination, or bias."
+							And
+				 			"connecting working journalists through social media for building harmonized global community"
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="manifesto" class="manifesto">
+		<div class="container">
+			<div class="row">
+				<div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+					<h2>منشور کے بنیادی نکات</h2>
+					<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+				</div>
+				<div class="sec-sub-title text-center wow rubberBand animated" data-wow-duration="1000ms">
+					<ul>
+						<li>صحافتی برادری کو ایک خاندان کی شکل میں لانا </li>
+						<li>صحافتی برادری کے بنیادی مسائل کی تشخیص اور ان کے حل کی ایک پلیٹ فارم پر جدوجہد
+							<ul>
+								<li>
+									تنخواہ نا دینا تنخواہ نا دینا ،تنخواہیں کم دینا یا بروقت نا دینا
+								</li>
+								<li>
+									اداروں کی طرف سے دانستہ تعیناتی کا لیٹر یا سروس ایگریمنٹ نا دیا جانا
+								</li>
+								<li>
+									ملازمت کا تحفظ نا ہونا
+								</li>
+								<li>
+									پیشہ ورانہ تربیت کا بندوبست نہ ہونا
+								</li>
+								<li>
+										سوشل سیکیورٹی یا بعد از ریٹائرمنٹ کوئی مالی فوائد کا طریقہ کار نا ہونا
+								</li>
+								<li>
+									طبی مسائل یا زخمی ہونے پر علاج کا کوئی تسلیم شدہ طریقہ کار نا ہونا
+								</li>
+								<li>
+									ہلاکت کی صورت میں پسماندگان کی کفالت کا کوئی منظور شدہ نظام نا ہونا
+								</li>
+								<li>
+									خطرناک حالات میں رپورٹنگ کیلئے حفاظتی آلات فراہم نا ہونا
+
+								</li>
+								<li>
+									انشورنس کور نا ہونا جبکہ کیمرے اور دیگر لوازمات انشور ہوتے ہیں مگر زندہ انسان نہیں
+
+								</li>
+								<li>
+									آزادانہ معلومات تک رسائی نہ دیا جانا
+								</li>
+
+								<li>
+									پسند ناپسند کی بنیاد پر تمام صحافیوں سے یکساں سلوک نا کیا جانا
+								</li>
+								<li>
+									صحافتی کالونیوں کو بڑے شہروں تک محدود رکھنا اور ان میں بھی میرٹ کا خیال نہ رکھنا</p>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="team" class="team">
+		<div class="container">
+			<div class="row">
+				<div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
+					<h2>ہمارے لوگ</h2>
+					<div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+				</div>
+				<div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
+				</div>
+				<figure class="team-member col-md-4 col-sm-12 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
+					<div class="member-thumb">
+						<img src="img/team/member-1.jpeg" alt="Team Member" class="img-responsive">
+						<figcaption class="overlay">
+							<h5>Sheikh Khalid Masood Sajid</h5>
+							<p>Chairman</p>
+							<p>+92 300 7727772</p>
+							<ul class="social-links text-center">
+								<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+							</ul>
+						</figcaption>
+					</div>
+					<h4>Sheikh Khalid Masood Sajid</h4>
+					<span>Chairman</span>
+				</figure>
+				<figure class="team-member col-md-4 col-sm-12 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+					<div class="member-thumb">
+						<img src="img/team/member-2.jpeg" alt="Team Member" class="img-responsive">
+						<figcaption class="overlay">
+							<h5>Shafqat chodhary</h5>
+							<p>President</p>
+							<p>+92 307 4756523​⁠​</p>
+							<ul class="social-links text-center">
+								<li><a href="https://twitter.com/ChodharyShafqat"><i class="fa fa-twitter fa-lg"></i></a></li>
+								<li><a href="https://www.facebook.com/shafqat.masoodarif"><i class="fa fa-facebook fa-lg"></i></a></li>
+							</ul>
+						</figcaption>
+					</div>
+					<h4>Shafqat chodhary</h4>
+					<span>President</span>
+				</figure>
+				<figure class="team-member col-md-4 col-sm-12 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+					<div class="member-thumb">
+						<img src="img/team/member-3.png" alt="Team Member" class="img-responsive">
+						<figcaption class="overlay">
+							<h5>Kamran Khan</h5>
+							<p>General Secretary</p>
+							<p>+92 333 4812167</p>
+							<ul class="social-links text-center">
+								<li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+								<li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+							</ul>
+						</figcaption>
+					</div>
+					<div class="text-center">
+						<h4>Kamran Khan</h4>
+						<span>General Secretary</span>
+					</div>
+				</figure>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact" class="contact">
+		<div class="container">
+			<div class="row mb50">
+				<div class="colowow fadeInLeft animated" data-wow-duration="500ms">
+					<div class="contact-address row">
+						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+							<p> info@ijrcofficial.com </p>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+							<p> Islamabad, Pakistan  </p>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+							<a href="https://www.facebook.com/www.ijrc.family"><i class="fa fa-facebook fa-2x"></i></a>
+							<a href="https://twitter.com/_ijrcfamily"><i class="fa fa-twitter fa-2x"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<a href="javascript:void(0);" id="back-top"><i class="fa fa-angle-up fa-3x"></i></a>
+
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.singlePageNav.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="js/jquery.mixitup.min.js"></script>
+  <script src="js/jquery.parallax-1.1.3.js"></script>
+  <script src="js/jquery-countTo.js"></script>
+  <script src="js/jquery.appear.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/wow.min.js"></script>
+	<script>
+		var wow = new WOW ({
+			boxClass:     'wow',      // animated element css class (default is wow)
+			animateClass: 'animated', // animation css class (default is animated)
+			offset:       120,          // distance to the element when triggering the animation (default is 0)
+			mobile:       false,       // trigger animations on mobile devices (default is true)
+			live:         true        // act on asynchronously loaded content (default is true)
+		  }
+		);
+		wow.init();
+	</script>
+      <script src="js/custom.js"></script>
+  </body>
 </html>
